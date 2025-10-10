@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- width theo kichs thước cố định w-number mỗi số ứng với ơn vị 0.25rem = 4px
+    rem = 16px w-4=1rem, w-16 = 4rem -->
+    <p class="bg-red-400">Lorem, ipsum dolor.</p>
+    <div class="w-15 bg-red-500 w-[500px]">w-16</div>
+    <div class="bg-red-500 w-[500px]">
+      <div class="w-1/2 bg-blue-500">50%</div>
+      <div class="w-1/2 bg-red-400"></div>
+    </div>
+  </body>
+</html>

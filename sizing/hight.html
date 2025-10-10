@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hight</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- min-width: sét kích thước tối thiểu cho phần tử kể cả kích thước có co lại thì vẫn luôn ở kích thước min không co lại -->
+    <div class="bg-red-500 min-w-50">min-width</div>
+    <div class="bg-blue-300 max-w-90">max-width</div>
+    <!--độ rộng đạt tối đa 360px kể cả trình duyệt có to hơn đi nữa-->
+    <!-- min hight 
+      -->
+    <div class="h-20 bg-blue-500">
+      <div class="min-h-80 bg-red-500 opacity-90">min-h-80</div>
+      <!--chiều cao của nó lúc nào củng 80-->
+      <!--max-hight-->
+
+      <div class="h-96 bg-blue-300">
+        <div class="max-h-80 bg-red-300">max-h-80</div>
+        <!-- vd: cho lorem*30 khiến từ nhiều hơn khi chiều cao không đủ chứa thì
+        max-h-80 cũng chỉ cao đúng 320px-->
+      </div>
+    </div>
+  </body>
+</html>

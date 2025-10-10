@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <!-- static : quay về lại luồng trên cùng fixed relative: định vị so với vị trí
+    ban đàu của nó 1 khoảng x -->
+
+    <div class="bg-gray-200 mt-3">
+      <div class="w-32 h-16 bg-green-600 relative top-7 left-4"></div>
+    </div>
+    <!--absolute định vị theo tổ tiêng gần nhất là relative nếu không có tổ tiên phần tử định vị theo top left corner-->
+    <div class="relative w-64 h-32 bg-yellow-200 mt-7">
+      <div class="absolute top-4 left-2 w-16 h-20 bg-blue-500"></div>
+    </div>
+    <!-- fixed cố định  -->
+
+    <div class="fixed bottom-4 right-7 bg-black text-white p-4 rounded-2xl">
+      Cố định bên dưới
+    </div>
+    <!--sticky bấm dính-->
+    <div class="h-[200vh] bg-gray-100 p-4">
+      <div class="sticky top-3 bg-pink-600 p-4 text-white">Sticky header</div>
+    </div>
+    <!--Căn cả bốn hướng top right bottom left bằng inset-->
+    <div class="relative size-64 bg-yellow-400">
+      <div class="bg-blue-500 absolute inset-y-13">Center</div>
+    </div>
+  </body>
+</html>

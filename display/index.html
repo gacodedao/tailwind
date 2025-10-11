@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <!--1.display block-->
+    <!-- chiếm ết chều ngang -->
+    <h1 style="width: 500px; height: 500px">Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit.</p>
+
+    <!--2.display inline-->
+    <span class="bg-blue-700">Lorem ipsum dolor sit.</span>
+    <span style="width: 500px; height: 500px">Lorem ipsum dolor sit.</span>
+    <!-- đặt chiều cao chiều rộng vẫn không có tác dụng, gọi là không phá vỡ được cấu trúc  -->
+    <!-- chiếm vừa nội dung trên 1 hàng -->
+    <!--3 display inline-block-->
+    <span
+      style="display: inline-block; width: 500px; height: 500px"
+      class="bg-red-500"
+      >test inline block</span
+    >
+    <span class="inline-block size-30 bg-cyan-300"> test</span>
+    <!-- vẫn là inline nhưng đc thêm kích thước giống block nó lai giữa hai thằng  -->
+    <!--hidden-->
+    <div class="bg-red-300 text-white hidden">Khối 1</div>
+    <div class="bg-blue-200">Khối 2</div>
+  </body>
+</html>

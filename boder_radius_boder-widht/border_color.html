@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body>
+    <!--Border inherit: kế thừa màu vuền từ cha
+    border-current cùng cùng màu với màu chữ
+    border-transparent vẫn chiếm cỗ (vẫn có độ dày nhưng không tất được bằng mắt)
+    
+    border-style vẫn đổi màu bth-->
+
+    <div class="border border-blue-500 p-2">
+      cha
+      <div class="border border-current text-red-600">Con kế thừa màu cha</div>
+
+      <p class="border border-transparent">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </div>
+  </body>
+</html>
